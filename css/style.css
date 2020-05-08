@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2d3436;
+    color: white;
+    min-height: 100%;
+    width: 100%;
+    font-family: 'montserrat', monospace;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+.name{
+    text-transform: capitalize;
+}
+.logo {
+    margin: 10px;
+    font-size: 1.5rem;
+    color: aqua;
+    font-weight: bold;
+}
+
+.group {
+    align-items: center;
+    display: flex;
+}
+
+.ham,
+.add {
+    margin: 7px 10px;
+}
+
+.ham img {
+    height: 30px;
+}
+
+.add img {
+    height: 25px;
+}
+
+ul {
+    display: none;
+}
+
+
+
+.options {
+    display: flex;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.chats {
+    border-right: 1px solid black;
+    padding: 4px 2px;
+}
+
+.title img {
+    margin: 0px 6px;
+}
+
+.chats,
+.contacts {
+    width: 50%;
+    padding: 5px 15px;
+    font-size: 18px;
+}
+
+.active {
+    background-color: black;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+#chat,
+#contacts {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+#contacts {
+    display: none;
+}
+
+.row {
+    padding: 13px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+#home .row {
+    justify-content: flex-start;
+}
+
+#home .imageblock {
+    margin: 8px 15px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #3e28e5;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.imageblock img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.nameblock .name {
+    font-size: 18px;
+}
+
+.nameblock .recentmsg {
+    padding: 8px 0px;
+    font-size: 12px;
+}
+
+
+/*chat page*/
+#msgpage {
+    display: flex;
+    flex: 0 1 0;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+#msgpage .row {
+    border: none;
+    overflow: hidden;
+    justify-content: space-between;
+    background-color: black;
+}
+
+#msgpage .imageblock {
+    margin: 8px 15px;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #3e28e5;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.dots {
+    transform: rotate(90deg);
+    font-size: 25px;
+}
+
+.left,
+.right {
+    display: flex;
+    align-items: center;
+}
+#window-container{
+    overflow-y: auto;
+    background-color: #2d3436;
+    width: 100%;
+    height: 78%;
+    ms-overflow-style: none;
+}
+#window-container::-webkit-scrollbar {
+    display: none;
+}
+
+#message-window {
+   height: 100%;
+    padding: 8px 0px;
+}
+
+.sender,
+.receiver {
+    height: auto;
+    width: fit-content;
+    max-width: 70%;
+    background-color: black;
+    margin: 20px 10px;
+    padding: 7px;
+    border-radius: 5px;
+}
+.timehai{
+    display: inline;
+    font-size: 10px;
+    padding: 3px 1px 3px 5px;
+    margin-left: auto;
+}
+.sender {
+    margin-right: auto;
+}
+
+.receiver {
+    margin-left: auto;
+    text-align: right;
+}
+
+.type form{
+    height: 45px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    /*
+    position: absolute;
+    bottom: 10px;
+*/
+}
+
+.type textarea {
+    margin: 0;
+    border-radius: 20px;
+    height: 30px;
+    width: 70%;
+    padding:5px;
+    font-size: 1.1rem;
+    font-family: 'montserrat',monospace;
+}
+textarea#message:focus{
+    outline: 0;
+}
+
+.type input[type=submit] {
+    height: 35px;
+    width: 50px;
+    background-color: black;
+    outline: 0;
+    border: 1px solid aqua;
+    border-radius: 15px;
+    color: white;
+    padding: 3px;
+    text-transform: uppercase;
+}
+
+.type button img {
+    height: 35px;
+    transform: rotate(45deg);
+}
+
+/*register page*/
+.logo {
+    text-align: center;
+}
+
+.text {
+    margin: 30px 20px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+form {
+    text-align: center;
+}
+
+#register input {
+    margin: 10px auto;
+    border: none;
+    outline: 0;
+    height: 30px;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    font-size: 1.2rem;
+    color: white;
+}
+#register input[type=submit] {
+    margin: 15px auto;
+    width: 80px;
+    height: 35px;
+    background-color: aqua;
+    color: black;
+    outline: 0;
+    border: 0;
+    font-size: 1.1rem;
+    padding: 3px;
+}
+
+/*register 2 page*/
+#registerse input {
+    margin: 10px auto;
+    border: none;
+    outline: 0;
+    height: 30px;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    font-size: 1.2rem;
+    color: white;
+}
+#registerse input[type=submit] {
+    margin: 15px auto;
+    width: 80px;
+    height: 35px;
+    background-color: aqua;
+    color: black;
+    outline: 0;
+    border: 0;
+    font-size: 1.1rem;
+    padding: 3px;
+}
+
+/*profile*/
+#profile {
+    height: 100%;
+    width: 100%;
+}
+
+#profile .row {
+    position: absolute;
+    border: 0;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.46);
+}
+
+#profile .row .back img {
+    height: 25px;
+}
+
+#profile .row .nameblock {
+    margin-left: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#profile .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#profile .pro-pic img {
+    height: 100%;
+    width: 100%;
+}
+
+#profile .info {
+    width: 90%;
+    margin: 10px auto;
+    padding: 6px;
+    background-color: rgb(35, 38, 39);
+
+}
+
+#profile .info .email-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px 8px;
+}
+
+#profile .info .email-info .email {
+    margin: auto 12px;
+}
