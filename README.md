@@ -32,10 +32,6 @@ PHP and MySQL.
 
 
 
-# Currently Live  for test Purpose 
-```http://adarsh-mesenger.tk```  till 20/05/2020
-
-
 # Usage
 ```
 Sql file included in 'db' folder has few default tables 
